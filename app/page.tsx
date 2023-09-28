@@ -1,21 +1,16 @@
-'use client';
-import { useEffect, useState } from 'react';
-import {Htag, Button, P, Tag} from '../components';
+// 'use client';
+// import { useState } from 'react';
+import {Htag, Button, P, Tag } from '../components';
+//import getMenu from '@/api/menu';
 
-export default function Home(): JSX.Element {
-  const [counter, setCounter] = useState(() => 11);
-  useEffect(()=>{
-    console.log('mounted', counter);
-  }, []);
-  
-  useEffect(()=>{
-    console.log('updated', counter);
-  }, [counter]);
 
+async function Home(): Promise<JSX.Element> {
+  // const [rating, setRating] = useState<number>(4);
+  //const menu = await getMenu(0);
   return (
       <>
-        <Htag tag='h1'>Курсы по Photoshops {counter}</Htag>
-        <Button appearance='primary'arrow='right' onClick={() => setCounter(x=> x + 1)}>Button</Button>
+        <Htag tag='h1'>Курсы по Photoshops</Htag>
+        <Button appearance='primary'arrow='right'>Button</Button>
         <Button appearance='ghost' arrow='down'>Buttons</Button>
         <P size='l'>Large</P>
         <P>Medium</P>
@@ -27,3 +22,6 @@ export default function Home(): JSX.Element {
       </>
   );
 }
+
+export default Home;
+/* <Rating rating={rating} isEditable setRating={setRating}/> */
