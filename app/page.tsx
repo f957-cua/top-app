@@ -1,6 +1,8 @@
 // 'use client';
 // import { useState } from 'react';
+import { TextArea } from '@/components/TextArea/TextArea';
 import {Htag, Button, P, Tag } from '../components';
+import { Input } from '@/components/Input/Input';
 //import getMenu from '@/api/menu';
 
 
@@ -19,6 +21,9 @@ async function Home(): Promise<JSX.Element> {
         <Tag color='green'>Tag</Tag>
         <Tag color='red'>Tag</Tag>
         <Tag size='s' color='primary'>Tag</Tag>
+        <Input placeholder='test' />
+        <TextArea />
+        
       </>
   );
 }

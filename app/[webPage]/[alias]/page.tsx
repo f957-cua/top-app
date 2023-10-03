@@ -32,8 +32,6 @@ export default async function TopPage({params}: {params: {alias: string}}): Prom
   }
   return (
       <>
-        <h1>Course alias {params.alias}</h1>
-        <h2>{page.title}</h2>
         <TopPageComponent page={page} firstCategory={0} products={products} />
       </>
   );

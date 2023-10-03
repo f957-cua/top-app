@@ -1,7 +1,7 @@
 .wrapper {
 	display: grid;
 	min-height: 100vh;
-	gap: 0 30px;
+	gap: 40px 30px;
 	grid-template-areas: 
 		'. header header .'
 		'. sidebar body .'
@@ -34,6 +34,10 @@
 
 	.sidebar {
 		display: none;
+	}
+
+	.body {
+		padding: 0 15px;
 	}
 
 	.wrapper {
